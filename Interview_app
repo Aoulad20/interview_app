@@ -1,3 +1,11 @@
+import pandas as pd
+import uuid
+
+unique_filename = str(uuid.uuid4())
 print("Hi ! Welcome to our app.")
 name=input ("What is your name?")
 print("Hi ", name)
+list1 = [name]
+col1 = "Name"
+data = pd.DataFrame({col1:list1})
+data.to_excel('unique_filename.xlsx', sheet_name='sheet1', index=False)
