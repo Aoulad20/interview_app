@@ -10,5 +10,8 @@ col1 = "Name"
 hobby=input ("What is your hobby?")
 list2 = [hobby]
 col2 = "hobby"
-data = pd.DataFrame({col1:list1,col2:list2})
+current_job=input ("Why do you want to leave your current job?")
+list3 = [current_job]
+col3 = "current_job"
+data = pd.DataFrame({col1:list1,col2:list2,col3:list3})
 data.to_excel('unique_filename.xlsx', sheet_name='sheet1', index=False)
