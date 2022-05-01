@@ -7,5 +7,8 @@ name=input ("What is your name?")
 print("Hi ", name)
 list1 = [name]
 col1 = "Name"
-data = pd.DataFrame({col1:list1})
+hobby=input ("What is your hobby?")
+list2 = [hobby]
+col2 = "hobby"
+data = pd.DataFrame({col1:list1,col2:list2})
 data.to_excel('unique_filename.xlsx', sheet_name='sheet1', index=False)
